@@ -37,6 +37,8 @@ https://school.programmers.co.kr/learn/courses/30/lessons/340212
 2. diffs의 값들을 정렬 해서 diff[n] - 1의 난이도로 제한 시간내 문제를 해결할 수 있는지 확인한다. n^2
  >  for ++{( diff[i] - diff[n]-1 ) * (diff[i] + diff[i-1]) }< result
 3. 난이도의 값의 경계가 정해졌음으로 ax + b < result의 수식을 풀어 가장 낮은 난이도를 구한다.
+> a = - for ++ { diff[i] + diff[i-1] }
+> b = for ++ { (diff[i] + diff[i-1]) * diff[i] }
 ## 예상 함수
 	 모두 하드 코딩
 	 
