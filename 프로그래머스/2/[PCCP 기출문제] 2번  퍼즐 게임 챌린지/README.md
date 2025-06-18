@@ -34,12 +34,11 @@ https://school.programmers.co.kr/learn/courses/30/lessons/340212
 ## 풀이 방법
 1. 모든 문제의 times[i]값은 숙련도 level과 상관없이 무조건 소요해야하는 시간임
  > result -= for(times);
-2. 각각의 난이도 마다 필요한 시간을
-
+2. diffs의 값들을 정렬 해서 diff[n] - 1의 난이도로 제한 시간내 문제를 해결할 수 있는지 확인한다. n^2
+ >  for ++{( diff[i] - diff[n]-1 ) * (diff[i] + diff[i-1]) }< result
+3. 난이도의 값의 경계가 정해졌음으로 ax + b < result의 수식을 풀어 가장 낮은 난이도를 구한다.
 ## 예상 함수
-	 ㅁㅁㅁ
+	 모두 하드 코딩
 	 
 ## 예상 시간, 공간 복잡도
-### 시간 복잡도 10n^2
-	 ㅁㅁㅁ
-	 
+### 시간 복잡도 n^2
