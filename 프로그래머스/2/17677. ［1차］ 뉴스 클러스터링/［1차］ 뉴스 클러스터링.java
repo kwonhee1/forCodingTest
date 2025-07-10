@@ -84,9 +84,9 @@ class Solution {
     }
     public int compare(Character[] char1, Character[] char2) {
         if(char1[0] == char2[0])
-            return char2[1] - char1[1];
+            return char1[1] - char2[1];
         else 
-            return char2[0] - char1[0];
+            return char1[0] - char2[0];
         
     }
 }
